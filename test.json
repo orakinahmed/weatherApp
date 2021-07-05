@@ -1,0 +1,45 @@
+{
+    "request_date":"06/30/2021",
+    "week": [
+        {
+            "day":"Monday",
+            "winds":"high",
+            "temperature":"105",
+            "humidity":"low",
+            "pollen_count":"9500",
+            "image":"https://image.shutterstock.com/image-vector/sun-icon-jpg-260nw-416254921.jpg"
+        },
+        {
+            "day":"Tuesday",
+            "winds":"low",
+            "temperature":"86",
+            "humidity":"high",
+            "pollen_count":"9500",
+            "image":"https://cliparting.com/wp-content/uploads/2016/07/Rain-clipart-2.jpeg"
+        },
+        {
+            "day":"Wednesday",
+            "winds":"low",
+            "temperature":"75",
+            "humidity":"none",
+            "pollen_count":"9500",
+            "image":"https://image.shutterstock.com/image-vector/sun-icon-jpg-260nw-416254921.jpg"
+        },
+        {
+            "day":"Thursday",
+            "winds":"high",
+            "temperature":"21",
+            "humidity":"high",
+            "pollen_count":"9500",
+            "image":"https://cliparting.com/wp-content/uploads/2016/07/Rain-clipart-2.jpeg"
+        },
+        {
+            "day":"Friday",
+            "winds":"low",
+            "temperature":"5",
+            "humidity":"high",
+            "pollen_count":"5000",
+            "image":"https://cliparting.com/wp-content/uploads/2016/07/Rain-clipart-2.jpeg"
+        }
+    ]
+}

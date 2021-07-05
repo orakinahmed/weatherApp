@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+
+#weatherBox {
+    border: 10px solid red;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#weatherBox p {
+    margin: 0px 10px;
+    border: 1px solid black;
+}
+
+.day {color: green}
