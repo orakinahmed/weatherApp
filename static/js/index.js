@@ -21,12 +21,11 @@ $('button').on('click', function() {
  */
 $.ajax({
     url: '/weather/week',
-    method: 'POST',
-    data: formData,
+    method: 'GET',
     contentType: "application/json",
     success: function(result) {
         console.log(result);
-        var day = result['week'][0]['day'];
-        $('.day').html('<p>' + day + '</p>');
+        var day = result['week'][1]['day'];
+        $('.day2').html('<p>' + day + '</p>');
     }
 });

@@ -14,17 +14,29 @@
     <button>Click me</button>
 
     <!--
-        make html that shows one days information
+        make html that shows one days information using python
     -->
 
-    {{user_data}}
     <div id="weatherBox">
-        <p class="day"></p>
-        <p class="gust"></p>
-        <p class="temp"></p>
-        <p class="humid"></p>
-        <p class="count"></p>
+        <p class="day">{{user_data['week'][0]['day']}}</p>
+        <p class="gust">{{user_data['week'][0]['winds']}}</p>
+        <p class="temp">{{user_data['week'][0]['temperature']}}</p>
+        <p class="humid">{{user_data['week'][0]['humidity']}}</p>
+        <p class="count">{{user_data['week'][0]['pollen_count']}}</p>
         <img class="weatherImg" src="" alt="">
+    </div>
+
+    <!--
+        make html that shows one days information using js
+    -->
+
+    <div id="weatherBox">
+        <p class="day2"></p>
+        <p class="gust2"></p>
+        <p class="temp2"></p>
+        <p class="humid2"></p>
+        <p class="count2"></p>
+        <img class="weatherImg2" src="" alt="">
     </div>
 
 </body>

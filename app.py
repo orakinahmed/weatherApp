@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template, request
-import json
+import json, sys
+import pymongo
 
 app = Flask(__name__)
 
@@ -14,9 +15,23 @@ app = Flask(__name__)
 # View that displays a page
 @app.route('/', methods=['GET'])
 def homePage():
+    # Connect to DB Server
+    client = pymongo.MongoClient("mongodb+srv://rakin:test#123@cluster0.7zpya.mongodb.net/weatherApp?retryWrites=true&w=majority")
     # Connect to DB
-    # LoadData
-    data = "Faraz"
+    db = client['weatherApp']
+    # Connect to the Collection we want
+    collection = db['weekData']
+    # Load Data
+    data = collection.find_one()
+    print(data, file=sys.stderr)
+    # pass in one item from data into the page
+    day = data["week"][0]['day']
+
+    # Inserting Data into DB
+    #mydict = { "name": "Faraz", "address": "123 Chicken Lane" }
+    #collection.insert_one(mydict)
+
+    # Example of Passing Data into Frontend using Flask
     return render_template('index.html', user_data=data)
 
 # Api Endpoint
