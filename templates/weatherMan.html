@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Man Info</title>
+    <link rel="stylesheet" href="../static/css/weatherMan.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Favorite Meteorogolists</h2>
+
+    <div class='outerContainer'>
+        <p>Welcome to our page that allows you to track your favorite meteorologists.</p>
+        <br>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Channel</th>
+                <th>Age</th>
+                <th>Education</th>
+                <th>Modify</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="name" type="text" placeholder="Name">
+                    <p id='errorBox1' class='errorBox'></p>
+                </td>
+                <td>
+                    <input class="channel" type="text" placeholder="Channel">
+                    <p id='errorBox2' class='errorBox'></p>
+                </td>
+                <td>
+                    <input class="age" type="text" placeholder="Age">
+                    <p id='errorBox3' class='errorBox'></p>
+                </td>
+                <td>
+                    <input class="education" type="text" placeholder="Education">
+                    <p id='errorBox4' class='errorBox'></p>
+                </td>
+                <td>
+                    <button id="addBtn" class="modifyBtns">Add</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Charles</td>
+                <td>Fox</td>
+                <td>29</td>
+                <td>PHD</td>
+                <td>
+                    <button class="removeBtn modifyBtns">Remove</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+<script src="../static/js/weatherMan.js"></script>
+</html>

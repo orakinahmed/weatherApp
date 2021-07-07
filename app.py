@@ -34,6 +34,11 @@ def homePage():
     # Example of Passing Data into Frontend using Flask
     return render_template('index.html', user_data=data)
 
+
+@app.route('/weather/team')
+def getTeam():
+    return render_template('weatherMan.html')
+
 # Api Endpoint
 @app.route('/weather/week', methods=['GET'])
 def getWeather():

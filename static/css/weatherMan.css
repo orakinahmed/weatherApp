@@ -1,0 +1,81 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: olive;
+}
+
+h2 {
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 3px 5px black;
+}
+
+h2:hover {
+    color: red;
+}
+
+
+.outerContainer {
+    background: white;
+    width: 1000px;
+    height: 500px; 
+    overflow: scroll;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid black;
+    box-shadow: 2px 3px black;
+
+    margin-top: 20px;
+}
+
+.outerContainer:hover {
+    border-color: red;
+    border-width: 5px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    border-right: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+input:hover {
+    border: 2px solid blue;
+}
+
+.errorBox {
+    font-size: 12px;
+    color: red;
+    text-align: center;
+}
+
+.removeBtn {
+    border: 1px solid black;
+    background: red;
+    color: white;
+    padding: 4px;
+}
+
+#addBtn {
+    border: 1px solid black;
+    background: green;
+    color: white;
+    padding: 4px;
+}
+
+.modifyBtns:hover {
+    border-width: 3px;
+    cursor: pointer;
+}
