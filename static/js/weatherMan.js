@@ -1,17 +1,22 @@
 console.log('Testing...');
 
-/**
- * .css() - To find css or to pass in css dictionary
- * .val() - To find values of input boxes or put data into input boxes
- * .html() - Replaces an elements inner html 
+/** MODIFICATION COMMANDS
+ * .css() - To get or to add CSS in an element
+ * .val() - To get or to replace the INPUT values in a input box
+ * .text() - To get or replace the TEXT inside an html
  * 
- * .append() - Adds an element to the end
+ * .html() - REPLACES an elements HTML
+ * .append() - ADDS an HTML inside another element at the end
+ * 
+ * NAVIGATION COMMANDS
  * .parent() - Finds the parent element
- * .remove() - Deletes an element
+ * .find() - Lets you find any child element matching
+ * .each(function() {}) - Lets you loop over a list of elements
  * 
  * this - What element invokes the action
  * 
- * Events -> Click, Change, Blur
+ * EVENT HANDLERs
+ * Ex. click, change, blur
  * .on('click', 'element', function() {} );
  */
 
@@ -23,6 +28,8 @@ console.log('Testing...');
  *  a. Get values from the input when add button is clicked.
  *  b. Create a brand new row and insert it into the table using the above values. 
  *  c. Add logic to check if the inputs have the right data and put an error onto the page in the right spot.
+ * 
+ * foreach jquery
  */
 
 
@@ -54,6 +61,7 @@ console.log('Testing...');
 
 
 // What invokes the action? this -> .removeBtn
+
 // $('table').on('click', '.removeBtn', function() {
 //     $(this).parent().parent().remove()
 // });
@@ -95,3 +103,52 @@ console.log('Testing...');
 //     }
 
 // });
+
+
+
+//````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+// /**
+//  * 1.) Add a update button
+//  *      a. add boxes that replace the values of name, channel, age, and education
+//  */
+
+
+
+// $('table').on('click', '.updateBtn', function(){
+//     var tdEle = $(this).parent().parent().find('td'); // [$('td'), $('td'), $('td'), $('td'), $('td')]
+  
+
+
+//     if (this > 4) {
+
+//     } else {
+
+//     }
+
+
+//     tdEle.each(function(index) {
+
+//         $(this).html('<input type="text">);
+//     }); 
+// });
+
+// /**2.) Make the update button update the row its on
+//  *      a. prevent the input boxes from replacing the modify buttons
+//  *          - use a counter with a if statement that allows you to not go into the modify column
+//  *      b. replace the update button with an ok button (confirms your input)
+//  * 
+//  * if the 
+//  * 
+//  */    
+
+
+
+
+
+
+// $('.okBtn').on('click', function() {
+//     var name = $('.name').val();
+
+// });
+
